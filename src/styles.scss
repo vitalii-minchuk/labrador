@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+$HEADER_HEIGHT: 70px;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: $HEADER_HEIGHT;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #777;
+  z-index: 999;
+}
+
+main {
+  padding-top: $HEADER_HEIGHT;
+  min-height: calc(100vh - $HEADER_HEIGHT);
+}
