@@ -1,0 +1,67 @@
+/******** Colors **********/
+
+/* primary colors */
+$main_blue: #246cc8;
+$main_black: #393939;
+$main_black2: #868686;
+$matrix_moderation: #999999;
+$main_white: #fff;
+$main_grey: #7e7c7c;
+$main_green: #13cc1a;
+$main_red: #ff2517;
+$main_light_grey: #979797;
+$main_orange: #FF9900;
+$bg_grey: #cccccc;
+$link_blue: #1890ff;
+$calendar_cell: #1151A2;
+$link_blue: #1890ff;
+$border_color: #E6E6E6;
+$border_dark_color: #B9B9B9;
+$main_grey_font: #959595;
+$hovered_main_grey_font: #565656;
+$hovered-main-red: #FF6C6EFF;
+$image_background_color:#F8F8F8;
+/* secondary colors */
+$secondary_text: #a7a7a7;
+$secondary_grey: #d4d4d4;
+$secondary_red: #ff6c6e;
+$secondary_dark_red: #990000;
+$secondary_green: #6AA84F;
+$secondary_light_green: #B6D7A8;
+$secondary_dark_green: #38761D;
+$secondary_orange: #F1C232;
+$secondary_link_dark: #1a1a1a;
+$secondary_light_blue: #c9daf8;
+$secondory_dark_grey: #767676;
+$secondary_border: #cfcfcf;
+$secondary_grey_font: #818181;
+$successful-bg-color: #D4ECE8;
+$successful-font-color: #20B540;
+$checkbox-color: #5799ea;
+$danger-bg-color: #F9DBE2;
+$danger-font-color: #FF2517;
+
+// bars
+$selected-bar-font: #1151A2;
+$selected-bar: #94C3FF;
+$hovered-selected-bar-font: #0f4c9d;
+$hovered-selected-bar: #8ebefc;
+/* Matrix colors */
+
+/******** Grid **********/
+$grid-gutter-width: 30px !default;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+) !default;
+$grid-breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+// shadow
+  $default-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1)

@@ -1,0 +1,48 @@
+// @import "src/styles/variables";
+
+.console {
+  display: flex;
+
+  &__sidebar {
+    width: 420px;
+    max-width: 310px;
+    padding: 23px 0 40px 20px;
+    margin-right: 10px;
+    // border-right: 1px solid $secondary_border;
+
+    h3 {
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    .mat-list-single-selected-option {
+      // background: $secondary_light_blue;
+      // color: $main_black;
+      position: relative;
+
+      &::after {
+        content: "";
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        // border-right: 3px solid $main_blue;
+      }
+    }
+
+    .mat-list-option:not(.mat-list-single-selected-option):hover {
+      background-color: transparent;
+      // color: $link_blue;
+    }
+
+    .item-name {
+      font-size: 18px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    padding: 25px 0 40px 0px;
+  }
+}
