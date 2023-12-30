@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './console.component.scss'
 })
 export class ConsoleComponent {
-
 }

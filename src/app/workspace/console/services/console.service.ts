@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from '../../../../environments/environment';
 import { Observable } from 'rxjs';
-import { EApiConsoleUrls } from '../../../enums/api-urls.enum';
+
+import { environment } from '../../../../environments/environment';
+import { EApiConsoleUrls } from '../../../enums';
 import { headers } from '../../../mock';
 import { IConsoleMatrixInfo } from '../models';
 

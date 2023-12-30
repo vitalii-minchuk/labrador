@@ -7,6 +7,8 @@ import { CitiesService } from '../../../../shared/services/cities.service';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit {
+  logo = 'logo'
+
   constructor(private citiesService: CitiesService) {}
 
   ngOnInit(): void {

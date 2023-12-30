@@ -34,7 +34,6 @@ const routes: Routes = [
     SharedModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-
   ],
   providers: [],
   bootstrap: [AppComponent],
