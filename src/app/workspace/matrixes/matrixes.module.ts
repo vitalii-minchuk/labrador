@@ -4,9 +4,7 @@ import { MatrixesComponent } from './view/matrixes.component';
 
 @NgModule({
   declarations: [MatrixesComponent],
-  imports: [
-    CommonModule,
-  ],
-  exports: [MatrixesComponent]
+  imports: [CommonModule],
+  exports: [MatrixesComponent],
 })
-export class MatrixesModule { }
+export class MatrixesModule {}

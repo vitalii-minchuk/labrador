@@ -7,7 +7,8 @@ import { EventItemComponent } from './event-item/event-item.component';
 
 @NgModule({
   declarations: [EventsComponent, EventItemComponent],
-  imports: [CommonModule,
+  imports: [
+    CommonModule,
     MatButtonModule],
   exports: [
     EventsComponent,
