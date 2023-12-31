@@ -7,5 +7,6 @@ import { MatrixesComponent } from './view/matrixes.component';
   imports: [
     CommonModule,
   ],
+  exports: [MatrixesComponent]
 })
 export class MatrixesModule { }

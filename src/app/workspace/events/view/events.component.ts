@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { EventsService } from '../services/events.service';
 import { EEventStatus } from '../../../enums';
-import { IEvent } from '../models';
+import { ICommonMatrixEvent } from '../models';
 
 @Component({
   selector: 'app-events',
@@ -10,7 +10,7 @@ import { IEvent } from '../models';
   styleUrl: './events.component.scss'
 })
 export class EventsComponent implements OnInit {
-  events: IEvent[] = []
+  events: ICommonMatrixEvent[] = []
 
   constructor(private eventsService: EventsService) {
   }

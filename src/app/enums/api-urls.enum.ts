@@ -1,9 +1,9 @@
 export enum EApiConsoleUrls {
-  CONSOLE = '/Console',
-  MATRICES = '/matrices',
+  CONSOLE = 'Console',
+  MATRICES = 'matrices',
 }
 
 export enum EApiMatrixUrls {
-  MATRIX = '/Matrix',
-  EVENTS = '/events'
+  MATRIX = 'Matrix',
+  EVENTS = 'events'
 }

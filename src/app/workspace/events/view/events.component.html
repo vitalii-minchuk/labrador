@@ -1,7 +1,5 @@
 <p>events works!</p>
 
 <div *ngFor="let el of events">
-  <p>
-    {{ el.name }}
-  </p>
+  <app-event-item [event]="el"></app-event-item>
 </div>

@@ -12,7 +12,7 @@ export class ConsoleService {
   constructor(private http: HttpClient) { }
 
   public getConsoleMatrices(): Observable<IConsoleMatrixInfo[]> {
-    const url = `${environment.apiUrl}${EApiConsoleUrls.CONSOLE}${EApiConsoleUrls.MATRICES}`
+    const url = `${environment.apiUrl}/${EApiConsoleUrls.CONSOLE}/${EApiConsoleUrls.MATRICES}`
 
     return this.http.get<IConsoleMatrixInfo[]>(url, { headers })
   }
