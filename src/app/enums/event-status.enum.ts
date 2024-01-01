@@ -4,5 +4,5 @@ export enum EEventStatus {
   CONFIRMED,
   STOPPED,
   CANCELED,
-  REJECTED
+  DECLINED
 }

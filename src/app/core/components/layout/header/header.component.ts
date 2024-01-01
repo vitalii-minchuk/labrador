@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CitiesService } from '../../../../shared/services/cities.service';
 
 @Component({
   selector: 'app-header',
@@ -9,9 +8,8 @@ import { CitiesService } from '../../../../shared/services/cities.service';
 export class HeaderComponent implements OnInit {
   logo = 'logo'
 
-  constructor(private citiesService: CitiesService) {}
+  constructor() {}
 
   ngOnInit(): void {
-    this.citiesService.getAllCities().subscribe()
   }
 }

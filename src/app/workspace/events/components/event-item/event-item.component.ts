@@ -1,7 +1,8 @@
 import { Component, Input, OnInit } from "@angular/core";
-import { ICommonMatrixEvent } from "../models";
 import { HttpClient } from "@angular/common/http";
-import { EventsService } from "../services/events.service";
+import { ICommonMatrixEvent } from "../../models";
+import { EventsService } from "../../services/events.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-event-item',
@@ -11,7 +12,11 @@ import { EventsService } from "../services/events.service";
 export class EventItemComponent implements OnInit {
   @Input() event: ICommonMatrixEvent | null
 
-  constructor(private http: HttpClient, private eventsService: EventsService) {
+  constructor(
+    private http: HttpClient,
+    private eventsService: EventsService,
+    private router: Router
+  ) {
   }
 
   ngOnInit(): void {
@@ -19,7 +24,8 @@ export class EventItemComponent implements OnInit {
 
   onItemSelect(): void {
     if (!this.event) return
+    const link = `/console/matrixes/events/${this.event.id}`
 
-    this.eventsService.getMatrixEventById(this.event.id).subscribe()
+    this.router.navigate([link])
   }
 }

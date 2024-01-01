@@ -8,4 +8,4 @@ import { CommonModule } from '@angular/common';
   ],
   exports: [CommonModule, HeaderComponent]
 })
-export class CoreModule { }
+export class CoreModule {}
