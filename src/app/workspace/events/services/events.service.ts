@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { environment } from '../../../../environments/environment';
 import { headers } from '../../../mock';
 import { EApiMatrixUrls, EEventStatus } from '../../../enums';
-import { ICommonMatrixEvent, ISingleMatrixEvent } from '../models';
+import { ICommonMatrixEvent, ICreateMatrixEventInput, ISingleMatrixEvent } from '../models';
 
 @Injectable({
   providedIn: 'root'
@@ -26,5 +26,11 @@ export class EventsService {
     const url = `${environment.apiUrl}/${EApiMatrixUrls.MATRIX}/${id}`
 
     return this.http.get<ISingleMatrixEvent>(url, { headers })
+  }
+
+  createMatrixEvent(input: any) {
+    const url = `${environment.apiUrl}/${EApiMatrixUrls.MATRIX}`
+
+    return this.http.post<any>(url, input, { headers })
   }
 }

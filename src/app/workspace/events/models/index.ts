@@ -80,3 +80,18 @@ export interface ISingleMatrixEvent {
   totalPredictionValue: number
   matrixStatistic: ISingleMatrixEventStatistic[]
 }
+
+export interface ICreateMatrixEventInput {
+  name: string
+  description: string
+  countryFilterId: string
+  closingDate: Date | string | null
+  region: ISingleMatrixEventLocation | null
+  city: ISingleMatrixEventLocation | null
+  country: ISingleMatrixEventLocation | null
+  variants: ISingleMatrixEventVariant[]
+  subCategories: ISingleMatrixEventSubCategory[]
+  labels: ISingleMatrixEventLabel[]
+  tag: ISingleMatrixEventTag
+  matrixInfo: ISingleMatrixEventInfo
+}

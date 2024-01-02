@@ -1,10 +1,22 @@
 .container {
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  padding: 0;
-  position: relative;
+  max-width: 1234px;
+  margin: 0 auto;
+  padding: 12px;
+}
 
-  .mat-progress-bar {
-    position: absolute;
-    margin-top: -4px;
-  }
+.event-form-card {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  left: 0;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
 }

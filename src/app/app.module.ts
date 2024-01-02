@@ -18,7 +18,7 @@ import { WorkspaceModule } from './workspace/workspace.module';
     SharedModule,
     HttpClientModule,
     RoutingModule,
-    WorkspaceModule,
+    WorkspaceModule
   ],
   providers: [],
   bootstrap: [AppComponent],

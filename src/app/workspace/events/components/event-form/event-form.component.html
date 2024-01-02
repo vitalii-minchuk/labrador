@@ -1,3 +1,32 @@
 <div class="container">
-  hh
+  <mat-card class="event-form-card">
+    <mat-progress-bar
+      class="progress-bar"
+      mode="indeterminate"
+      *ngIf="isLoading"
+    ></mat-progress-bar>
+    <div>
+      <a routerLink="/console/matrixes/events">
+        <!-- <mat-icon>arrow_back</mat-icon> -->
+        События
+      </a>
+    </div>
+
+    <form (ngSubmit)="createNewMatrixEvent(f)" #f="ngForm">
+      <div>
+        <label for="name">name</label>
+        <input id="name" name="name" type="text" ngModel>
+      </div>
+
+    <div class="form-actions" *ngIf="isNew">
+      <button
+        type="submit"
+        mat-raised-button
+        color="primary"
+      >
+        Отправить
+      </button>
+    </div>
+    </form>
+  </mat-card>
 </div>
